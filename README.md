@@ -5,4 +5,6 @@ ___
 
 ### Install
 > react-router-dom@5<br>
-> styled-components
+> styled-components <br>
+> redux, react-redux, redux-actions, redux-devtools-extension<br>
+> immer
