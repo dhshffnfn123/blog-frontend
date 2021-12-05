@@ -7,7 +7,9 @@ ___
 > react-router-dom@5<br>
 > styled-components <br>
 > redux, react-redux, redux-actions, redux-devtools-extension<br>
-> immer
+> immer <br>
+> axios <br>
+> redux-saga
 
 ___
 
