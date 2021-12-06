@@ -75,6 +75,11 @@ const auth = handleActions(
             authError: null,
             auth,
         }),
+        // 로그인 실패
+        [LOGIN_FAILURE]: (state, { payload: error }) => ({
+            ...state,
+            authError: error,
+        }),
     },
     initialState,
 );

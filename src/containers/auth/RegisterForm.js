@@ -49,7 +49,7 @@ const RegisterForm = () => {
             console.log('회원가입 성공');
             console.log(auth);
         }
-    }, [auth, authError])
+    }, [auth, authError]);
 
     return (
         <AuthForm
