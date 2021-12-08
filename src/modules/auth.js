@@ -25,6 +25,10 @@ export const register = createAction(REGISTER, ({ username, password }) => ({
     username,
     password,
 }));
+export const login = createAction(LOGIN, ({ username, password }) => ({
+    username,
+    password,
+}));
 
 // 사가 생성
 const registerSaga = createRequestSaga(REGISTER, authAPI.register);
