@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeField, initializeForm, register } from '../../modules/auth';
 import AuthForm from "../../components/auth/AuthForm";
-import user, { check } from '../../modules/user';
+import { check } from '../../modules/user';
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
-    const { form, auth, authError } = useSelector(({ auth, user }) => ({
+    const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
         form: auth.register,
         auth: auth.auth,
         authError: auth.authError,
