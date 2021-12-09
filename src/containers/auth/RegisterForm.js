@@ -10,7 +10,7 @@ const RegisterForm = () => {
         form: auth.register,
         auth: auth.auth,
         authError: auth.authError,
-        user: user.user
+        user: user.user,
     }));
     // 인풋 변경 이벤트 핸들러
     const onChange = e => {
