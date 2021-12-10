@@ -9,7 +9,8 @@ ___
 > redux, react-redux, redux-actions, redux-devtools-extension<br>
 > immer <br>
 > axios <br>
-> redux-saga
+> redux-saga <br>
+> quill
 
 ___
 
