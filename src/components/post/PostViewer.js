@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import palette from "../../lib/styles/palette";
 import Responsive from "../common/Responsive";
 import SubInfo from "../common/SubInfo";
-import Tags from "../commons/Tags";
+import Tags from "../common/Tags";
 
 const PostViewerBlock = styled(Responsive)`
     margin-top: 4rem;
@@ -28,9 +28,9 @@ const PostViewer = ({ post, error, loading }) => {
     // 에러 발생 시
     if (error) {
         if (error.response && error.response.status === 404) {
-            return <PostViewerBlock>존재하지 않는 포스트입니다.</PostViewerBlock>
+            return <PostViewerBlock>존재하지 않는 포스트입니다.</PostViewerBlock>;
         }
-        return <PostViewerBlock>오류 발생!</PostViewerBlock>
+        return <PostViewerBlock>오류 발생!</PostViewerBlock>;
     }
 
     // 로딩 중이거나 아직 포스트 데이터가 없을 때

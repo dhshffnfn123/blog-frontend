@@ -1,5 +1,5 @@
-import client from './client';
 import qs from 'qs';
+import client from './client';
 
 export const writePost = ({ title, body, tags }) =>
     client.post('/api/posts', { title, body, tags });
