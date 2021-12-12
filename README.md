@@ -10,7 +10,8 @@ ___
 > immer <br>
 > axios <br>
 > redux-saga <br>
-> quill
+> quill<br>
+> qs
 
 ___
 
