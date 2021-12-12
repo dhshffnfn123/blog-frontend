@@ -11,7 +11,7 @@ ___
 > axios <br>
 > redux-saga <br>
 > quill<br>
-> qs
+> qs 
 
 ___
 
