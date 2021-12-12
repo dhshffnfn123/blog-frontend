@@ -35,22 +35,28 @@ const buttonStyle = css`
                 background: ${palette.cyan[4]};
             }
         `}
-    `;
 
-    const StyledButton = styled.button`
-        ${buttonStyle}
-    `;
+    &:disabled {
+        background: ${palette.gray[3]};
+        color: ${palette.gray[5]};
+        cursor: not-allowed;
+    }
+`;
 
-    const StyledLink = styled(Link)`
-        ${buttonStyle}
-    `;
+const StyledButton = styled.button`
+    ${buttonStyle}
+`;
 
-    const Button = props => {
-        return props.to ? (
-            <StyledLink {...props} cyan={props.cyan ? 1 : 0} />
-        ) : (
-            <StyledButton {...props} />
-        );
-    };
+const StyledLink = styled(Link)`
+    ${buttonStyle}
+`;
+
+const Button = props => {
+    return props.to ? (
+        <StyledLink {...props} cyan={props.cyan ? 1 : 0} />
+    ) : (
+        <StyledButton {...props} />
+    );
+};
 
     export default Button;
