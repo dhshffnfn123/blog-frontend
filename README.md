@@ -11,7 +11,8 @@ ___
 > axios <br>
 > redux-saga <br>
 > quill<br>
-> qs 
+> qs <br>
+> react-helmet-async
 
 ___
 
