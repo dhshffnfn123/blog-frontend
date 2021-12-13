@@ -24,7 +24,7 @@ const PostContent = styled.div`
     color: ${palette.gray[8]};
 `;
 
-const PostViewer = ({ post, error, loading }) => {
+const PostViewer = ({ post, error, loading, actionButtons }) => {
     // 에러 발생 시
     if (error) {
         if (error.response && error.response.status === 404) {
@@ -45,6 +45,7 @@ const PostViewer = ({ post, error, loading }) => {
                 <SubInfo username={user.username} publishedDate={publishedDate} hasMarginTop />
                 <Tags tags={tags} />
             </PostHead>
+            {actionButtons} {/* props를 JSX 형태로 받아와서 렌더링하는 것이다. */}
             <PostContent
                 dangerouslySetInnerHTML={{__html: body }}
             />
