@@ -4,11 +4,12 @@ import qs from 'qs';
 import Button from '../common/Button'
 
 const PaginationBlock = styled.div`
-    width: 320px;
+    width: 220px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    padding-bottom: 5rem;
 `;
 const PageNumber = styled.div``;
 
